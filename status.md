@@ -4,18 +4,20 @@
 
 ## 当前进度
 
-仓库已有可发布结构：`skills/creative-reframe/` 放 v6 公开版，含 SKILL.md、四份 references、agents/openai.yaml。frontmatter 已补齐 license、metadata、triggers。
+已发布。
 
+- GitHub 公开仓库 `mapleleo-hub/creative-reframe-skill`，默认分支 master，首版提交 d15b879
+- clawhub 提交 `creative-reframe@0.6.0`，返回 Update submitted，等 24 到 72 小时安全扫描后公开
+- `npx skills add mapleleo-hub/creative-reframe-skill --list` 识别到 1 个 skill，仓库布局与 frontmatter 三项通过
 - 泛化扫描通过，无个人路径与凭据
 - 名字检查：clawhub 空闲，GitHub 无同名仓库，skills.sh 三处相关但不冲突
-- 许可证定 MIT，版权方 mapleleo-hub
+- 许可证 MIT，版权方 mapleleo-hub
 
 ## 下一步
 
-1. git init 并提交首版，推 GitHub 公开仓库 `mapleleo-hub/creative-reframe-skill`
-2. clawhub 发布 0.6.0（slug: creative-reframe）
-3. 用 check.mjs 验证索引收录
-4. 本地中枢 `~/.agents/skills/creative-reframe` 目前指向 magpie library 的 v7，公开仓库是 v6，两条线分开维护
+1. 等 clawhub 安全扫描结束，确认 `https://clawhub.com/skills/creative-reframe` 可访问
+2. 用 `npx skills find creative-reframe` 确认 skills.sh 索引生效，异步，可能滞后数小时
+3. 本地中枢 `~/.agents/skills/creative-reframe` 指向 magpie library 的 v7，公开仓库是 v6，两条线分开维护
 
 ## 已知坑
 
